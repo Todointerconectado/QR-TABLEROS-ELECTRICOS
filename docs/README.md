@@ -1,14 +1,13 @@
-# <div align="center"> Proyecto Final - Tienda Online</div>
+# <div align="center"> QR PARA TABLEROS ELÉCTRICOS</div>
 
 |  Insignias ✔  |
 | :-----------: |
 | [![GitHub pull requests](https://img.shields.io/github/issues-pr/Todointerconectado/tiendaJulieta?color=blue&logo=github)](https://github.com/Todointerconectado/mystore/pulls) • [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Todointerconectado/tiendaJulieta?color=blue&logo=github)](https://github.com/Todointerconectado/mystore/pulls) • [![GitHub forks](https://img.shields.io/github/forks/Todointerconectado/tiendaJulieta?logo=github)](https://github.com/Todointerconectado/mystore/fork)  •  [![GitHub NE Network](https://img.shields.io/badge/NE-Network-blue?logo=github)](https://github.com/Todointerconectado/mystore/network)
 [![GitHub followers](https://img.shields.io/github/followers/Todointerconectado?logo=github)](#)  •  [![GitHub repo size](https://img.shields.io/github/repo-size/Todointerconectado/mystore?logo=github)](#)  •  [![GitHub language count](https://img.shields.io/github/languages/count/Todointerconectado/mystore?logo=github)](#)  •  [![GitHub top language](https://img.shields.io/github/languages/top/Todointerconectado/mystore?logo=JavaScript)](#) |
 
-
 |  Puedes acceder a la versión desplegada de la tienda online a través del siguiente enlace: |
 | :-------------------------------------------------------: |
-| [![GitHub Todointerconectado](https://img.shields.io/badge/todointerconectado.com/-mystore-105d89?style=for-the-badge&logo=github&logoColor=white&labelColor=101)](https://todointerconectado.com/mystore) |
+| [![GitHub Todointerconectado](https://img.shields.io/badge/todointerconectado.com/-QR_TABLEROS_ELECTRICOS-105d89?style=for-the-badge&logo=github&logoColor=white&labelColor=101)](https://todointerconectado.com/QR-TABLEROS-ELECTRICOS) |
 
 ![Mockup](./assets/images/mockup.png)
 
