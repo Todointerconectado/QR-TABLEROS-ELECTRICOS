@@ -2,8 +2,8 @@
 
 |  Insignias ✔  |
 | :-----------: |
-| [![GitHub pull requests](https://img.shields.io/github/issues-pr/Todointerconectado/tiendaJulieta?color=blue&logo=github)](https://github.com/Todointerconectado/mystore/pulls) • [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Todointerconectado/tiendaJulieta?color=blue&logo=github)](https://github.com/Todointerconectado/mystore/pulls) • [![GitHub forks](https://img.shields.io/github/forks/Todointerconectado/tiendaJulieta?logo=github)](https://github.com/Todointerconectado/mystore/fork)  •  [![GitHub NE Network](https://img.shields.io/badge/NE-Network-blue?logo=github)](https://github.com/Todointerconectado/mystore/network)
-[![GitHub followers](https://img.shields.io/github/followers/Todointerconectado?logo=github)](#)  •  [![GitHub repo size](https://img.shields.io/github/repo-size/Todointerconectado/mystore?logo=github)](#)  •  [![GitHub language count](https://img.shields.io/github/languages/count/Todointerconectado/mystore?logo=github)](#)  •  [![GitHub top language](https://img.shields.io/github/languages/top/Todointerconectado/mystore?logo=JavaScript)](#) |
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Todointerconectado/QR-TABLEROS-ELECTRICOS?color=blue&logo=github)](https://github.com/Todointerconectado/QR-TABLEROS-ELECTRICOS/pulls) • [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Todointerconectado/QR-TABLEROS-ELECTRICOS?color=blue&logo=github)](https://github.com/Todointerconectado/QR-TABLEROS-ELECTRICOS/pulls) • [![GitHub forks](https://img.shields.io/github/forks/Todointerconectado/QR-TABLEROS-ELECTRICOS?logo=github)](https://github.com/Todointerconectado/QR-TABLEROS-ELECTRICOS/fork)  •  [![GitHub NE Network](https://img.shields.io/badge/NE-Network-blue?logo=github)](https://github.com/Todointerconectado/QR-TABLEROS-ELECTRICOS/network)
+[![GitHub followers](https://img.shields.io/github/followers/Todointerconectado?logo=github)](#)  •  [![GitHub repo size](https://img.shields.io/github/repo-size/Todointerconectado/QR-TABLEROS-ELECTRICOS?logo=github)](#)  •  [![GitHub language count](https://img.shields.io/github/languages/count/Todointerconectado/QR-TABLEROS-ELECTRICOS?logo=github)](#)  •  [![GitHub top language](https://img.shields.io/github/languages/top/Todointerconectado/QR-TABLEROS-ELECTRICOS?logo=JavaScript)](#)
 
 |  Puedes acceder a la versión desplegada de la tienda online a través del siguiente enlace: |
 | :-------------------------------------------------------: |
@@ -30,13 +30,14 @@ Este repositorio incluye las siguientes secciones y archivos clave:
 ## Tecnologías Utilizadas
 Este proyecto fue desarrollado utilizando las siguientes tecnologías y metodologías:
 
-|   Tecnología:    | Descripción |
-| :--------------: | ----------- |
-|`HTML5 Semántico:`| Optimización para SEO y accesibilidad.          |
-| `CSS3:`          | Diseño respectivo con Flexbox y Grid.           |
-| `CSS Modular`    |	Estilos organizados en módulos reutilizables y aislados. |
-| `Metodología BEM`|	Nomenclatura para organizar y escalar estilos CSS. |
-| `JavaScript:`    | Interactividad y manejo de eventos.             |
-| `Flexbox y Grid:`| Construcción de layouts flexibles y adaptables. |
-| `Mobile First:`  | Enfoque en dispositivos móviles desde el inicio.|
-| `Formspree:`     | Gestión y envío de formularios de contacto.     |
+|      Tecnología:     | Descripción |
+| :------------------: | ----------- |
+|`Conventional Commits`| [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): Es una convención para dar formato a los mensajes de commit. Define reglas  simples y legibles para indicar el tipo de cambio (feat, fix,docs, chore, etc.), facilitando la  comprensión del historial, la automatización de versiones semánticas y la generación de changelogs. |
+|`HTML5 Semántico:`    | Optimización para SEO y accesibilidad. |
+| `CSS3:`              | Diseño respectivo con Flexbox y Grid. |
+| `CSS Modular`        | Estilos organizados en módulos reutilizables y aislados. |
+| `Metodología BEM`    | Nomenclatura para organizar y escalar estilos CSS. |
+| `JavaScript:`        | Interactividad y manejo de eventos. |
+| `Flexbox y Grid:`    | Construcción de layouts flexibles y adaptables. |
+| `Mobile First:`      | Enfoque en dispositivos móviles desde el inicio.|
+| `Formspree:`         | Gestión y envío de formularios de contacto.     |
