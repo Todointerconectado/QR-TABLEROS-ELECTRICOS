@@ -7,7 +7,7 @@
 
 |  Puedes acceder a la versión desplegada de la tienda online a través del siguiente enlace: |
 | :-------------------------------------------------------: |
-| [![GitHub Todointerconectado](https://img.shields.io/badge/todointerconectado.com/-QR_TABLEROS_ELECTRICOS-105d89?style=for-the-badge&logo=github&logoColor=white&labelColor=101)](https://todointerconectado.com/QR-TABLEROS-ELECTRICOS) |
+| [![GitHub Todointerconectado](https://img.shields.io/badge/todointerconectado.com/-QR_TABLEROS_ELECTRICOS-105d89?style=for-the-badge&logo=github&logoColor=white&labelColor=101)](https://todointerconectado.com/QR-TABLEROS-ELECTRICOS/) |
 
 ![Mockup](./assets/images/mockup.png)
 
