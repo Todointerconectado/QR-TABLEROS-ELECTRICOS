@@ -46,51 +46,47 @@ body {
 .header {
   height: 210px;
   weight: 100%;
-
-  & #content-logo {
-    background: var(--color-primary);
-    height: 150px;
-    weight: 100%;
-    display: flex;
-    justify-content: center; /* centra en horizontal */
-    align-items: flex-end; /* lleva el contenido al borde inferior */
-    position: relative; /* para que el desbordamiento se “pegue” al header */
-  }
-
-  & #logo {
-    border-radius: 12px;
-    position: absolute;
-    transform: translateY(50%); /* ✅ lo baja la mitad de su tamaño */
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 120px;
-    max-width: 100%; /* ✅ se adapta en pantallas chicas */
-    border-radius: 12px;
-  }
+}
+#content-logo {
+  background: var(--color-primary);
+  height: 150px;
+  weight: 100%;
+  display: flex;
+  justify-content: center; /* centra en horizontal */
+  align-items: flex-end; /* lleva el contenido al borde inferior */
+  position: relative; /* para que el desbordamiento se “pegue” al header */
 }
 
+#logo {
+  border-radius: 12px;
+  position: absolute;
+  transform: translateY(50%); /* ✅ lo baja la mitad de su tamaño */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 120px;
+  max-width: 100%; /* ✅ se adapta en pantallas chicas */
+  border-radius: 12px;
+}
 
 /* Texto de la empresa */
 .empresa {
   weight: 100%;
   padding: 20px 0px;
   text-align: center;
-
-  & h1 {
+}
+h1 {
     font-size: 20px;
   }
 
-  & p {
+p {
     font-size: 14px;
     color: var(--color-brack);
   }
-}
-
 
 /* Lista de tableros */
 ul {
-  //border: 2px solid blue;
+  border: 2px solid blue;
   list-style: none;
 
   & li {
@@ -118,10 +114,9 @@ ul {
       color: var(--color-brack);
       margin-left: 10px;
 
-        &:hover {
+      &:hover {
         text-decoration: underline;
       }
     }
-
   }
 }
