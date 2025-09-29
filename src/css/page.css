@@ -17,6 +17,7 @@
 
   --color-caja-url-hover: #d8d7d7ff;
   --color-azul-hover: #2c2c7de6;
+  --color-borde-caja: #A14949FF;
 
   /* VARIABLES FUENTES */
   --family-primary: "Roboto", monospace, sans-serif;
@@ -76,47 +77,41 @@ body {
   text-align: center;
 }
 h1 {
-    font-size: 20px;
-  }
+  font-size: 20px;
+}
 
 p {
-    font-size: 14px;
-    color: var(--color-brack);
-  }
+  font-size: 14px;
+  color: var(--color-brack);
+}
 
 /* Lista de tableros */
-ul {
-  border: 2px solid blue;
+.content-links {
+  padding: 5px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-  & li {
+  .links {
+    border: 1px solid var(--color-borde-caja);
+    padding: 5px 15px;
+    font-weight: bold;
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
+    weight: 100%;
     height: 45px;
-    background: var(--color-caja-url);
-    margin-bottom: 8px;
     border-radius: 8px;
-    font-weight: bold;
+    text-decoration: none;
+    background: var(--color-caja-url);
+    color: var(--color-brack);
     transition: background 0.3s ease;
 
     &:hover {
       background: var(--color-caja-url-hover);
-    }
-
-    & a {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      weight: 100%;
-      height: 45px;
-      text-decoration: none;
-      color: var(--color-brack);
-      margin-left: 10px;
-
-      &:hover {
-        text-decoration: underline;
-      }
+      text-decoration: underline var(--color-borde-caja);
     }
   }
 }
