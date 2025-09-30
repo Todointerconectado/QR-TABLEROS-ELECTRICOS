@@ -2,6 +2,16 @@
     "conventionalCommits.scopes": [
         "page",
         "enlaces",
-        "footer"
+        "footer",
+        "icons"
+    ],
+    "cSpell.words": [
+        "ADELINA",
+        "creacion",
+        "descripcion",
+        "noopener",
+        "noreferrer",
+        "Parametro",
+        "ubicacion"
     ]
 }
