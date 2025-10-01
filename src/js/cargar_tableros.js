@@ -16,16 +16,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (tableros.length === 0) {
         lista.innerHTML = "<li>No se encontraron tableros para esta sede.</li>";
+        return;
       }
 
       tableros.forEach((tablero) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
+        const span = document.createElement("span");
+        const img = document.createElement("img");
+
+        // Texto del tablero
+        span.textContent = tablero["id del tablero"];
+
+        // Flechita
+        img.src = "../../assets/icons/arrow.png";
+        img.alt = "arrow";
+
+        // Config del enlace
         a.className = "links";
         a.href = tablero.url;
         a.target = "_blank";
         a.rel = "noopener noreferrer";
-        a.textContent = tablero["id del tablero"];
+
+        // Orden de elementos dentro del <a>
+        a.appendChild(span);
+        a.appendChild(img);
+
         li.appendChild(a);
         lista.appendChild(li);
       });
