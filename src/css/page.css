@@ -14,12 +14,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  background: var(--color-fondo);
 }
 
 /* Variables CSS globales (colores, fuentes) */
 
 :root {
   /* VARIABLES DE COLORES */
+  --color-fondo: #f9fafb;
   --color-primary: #c00000;
   --color-white: #ffffffff;
   --color-brack: #00000088;
@@ -28,7 +30,7 @@ html {
 
   --color-caja-url-hover: #d8d7d7ff;
   --color-azul-hover: #2c2c7de6;
-  --color-borde-caja: #a14949ff;
+  --color-borde-caja: #9b9b9bff;
 
   /* VARIABLES FUENTES */
   --family-primary: "Roboto", monospace, sans-serif;
@@ -68,6 +70,7 @@ html {
 
   & .header {
     grid-area: header;
+    height: 210px;
   }
   & .main {
     grid-area: main;
@@ -81,7 +84,6 @@ html {
 
 /* Header */
 .header {
-  height: 210px;
   width: 100%;
 
   & .content-logo {
@@ -109,6 +111,7 @@ html {
 /* Texto de la empresa */
 .content-empresa {
   width: 100%;
+  height: 125px;
   padding: 15px 0px;
   text-align: center;
   display: flex;
@@ -144,17 +147,40 @@ p {
 
 /* Lista de tableros */
 .content-links {
+  margin: 0px 10px 10px 10px;
   padding: 10px;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: var(--gap-10);
 
+  height: calc(100vh - 210px - 125px - 80px - 10px); /* Calcula espacio restante restando header, .content-empresa y footer */
+  overflow-y: auto; /* Scroll vertical si excede */
+  overflow-x: hidden; /* Evita scroll horizontal */
+  border-radius: var(--border-radius-08); /* opcional, para bordes suaves */
+
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  
+  &.scroll-active {
+    box-shadow: 0 4px 8px #00000071;
+  }
+
+  &.scroll-hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Edge */
+  }
+
   .links {
     border: 1px solid var(--color-borde-caja);
     font-size: var(--size-14);
     padding: 5px 15px;
-    font-width: bold;
+    font-weight: bold;
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
@@ -230,7 +256,7 @@ p {
 /* Ajuste para pantallas pequeñas */
 @media (max-width: 880px) {
   .footer {
-  padding: 2rem 0rem;
+    padding: 2rem 0rem;
     grid-template-areas:
       "center"
       "right";
@@ -244,5 +270,3 @@ p {
     justify-self: center;
   }
 }
-
-
