@@ -21,7 +21,7 @@ fetch("./data/tableros_completo.json")
       span.textContent = sede;
 
       // Ícono
-      img.src = "../../assets/icons/arrow.png";
+      img.src = "./assets/icons/arrow.png";
       img.alt = "arrow";
 
       // Configuración del link
