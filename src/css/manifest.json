@@ -1,0 +1,26 @@
+{
+  "name": "Relevamiento de Tableros Eléctricos",
+  "short_name": "Tableros Eléctricos",
+  "description": "Acceso a relevamientos de tableros eléctricos, luces de emergencia y mantenimiento.",
+  "start_url": "/QR-TABLEROS-ELECTRICOS/base-tablero.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0056a0",
+  "orientation": "portrait-primary",
+  "scope": "/QR-TABLEROS-ELECTRICOS/",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "/QR-TABLEROS-ELECTRICOS/assets/icons/logo-cosaca.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": [
+    "utilities",
+    "maintenance",
+    "tools"
+  ],
+  "prefer_related_applications": false,
+  "related_applications": []
+}
