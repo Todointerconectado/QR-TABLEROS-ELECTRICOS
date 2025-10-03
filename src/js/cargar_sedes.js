@@ -1,5 +1,3 @@
-
-
 fetch("./data/tableros_completo.json")
   .then((response) => response.json())
   .then((data) => {
