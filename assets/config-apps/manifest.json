@@ -5,7 +5,7 @@
   "start_url": "/QR-TABLEROS-ELECTRICOS/base-tablero.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0056a0",
+  "theme_color": "#c00000",
   "orientation": "portrait-primary",
   "scope": "/QR-TABLEROS-ELECTRICOS/",
   "lang": "es-AR",
