@@ -6,7 +6,8 @@
         "icons",
         "data",
         "effects",
-        "manifest"
+        "manifest",
+        "estructura"
     ],
     "cSpell.words": [
         "ADELINA",
@@ -17,6 +18,7 @@
         "noopener",
         "noreferrer",
         "Parametro",
+        "qrtableros",
         "relevamientos",
         "scrollear",
         "todointerconectado",

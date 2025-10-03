@@ -28,7 +28,7 @@ fetch("./data/tableros_completo.json")
 
       // Configuración del link
       a.className = "links";
-      a.href = `/cosaca.html?sede=${encodeURIComponent(sede)}`;
+      a.href = `/tablero.html?sede=${encodeURIComponent(sede)}`;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
 
