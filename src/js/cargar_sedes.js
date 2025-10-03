@@ -1,3 +1,5 @@
+
+
 fetch("./data/tableros_completo.json")
   .then((response) => response.json())
   .then((data) => {
@@ -26,7 +28,7 @@ fetch("./data/tableros_completo.json")
 
       // Configuración del link
       a.className = "links";
-      a.href = `./src/html/sede.html?sede=${encodeURIComponent(sede)}`;
+      a.href = `/cosaca.html?sede=${encodeURIComponent(sede)}`;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
 
