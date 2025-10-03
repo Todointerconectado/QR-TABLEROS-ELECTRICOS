@@ -2,7 +2,7 @@
   "name": "Relevamiento de Tableros Eléctricos",
   "short_name": "Tableros Eléctricos",
   "description": "Acceso a relevamientos de tableros eléctricos, luces de emergencia y mantenimiento.",
-  "start_url": "/qrtableros/index.html",
+  "start_url": "/qrtableros/sedes.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#c00000",
