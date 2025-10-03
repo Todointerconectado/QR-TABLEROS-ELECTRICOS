@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ],
+    "apple-touch-icons": "off",
+    "manifest-file-extension": "off",
+    "manifest-exists": "off",
+    "highest-available-document-mode": "off"
+  }
+}
