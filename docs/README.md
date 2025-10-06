@@ -2,14 +2,14 @@
 
 |  Insignias ✔  |
 | :-----------: |
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/Todointerconectado/QR-TABLEROS-ELECTRICOS?color=blue&logo=github)](https://github.com/Todointerconectado/QR-TABLEROS-ELECTRICOS/pulls) • [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Todointerconectado/QR-TABLEROS-ELECTRICOS?color=blue&logo=github)](https://github.com/Todointerconectado/QR-TABLEROS-ELECTRICOS/pulls) • [![GitHub forks](https://img.shields.io/github/forks/Todointerconectado/QR-TABLEROS-ELECTRICOS?logo=github)](https://github.com/Todointerconectado/QR-TABLEROS-ELECTRICOS/fork)  •  [![GitHub NE Network](https://img.shields.io/badge/NE-Network-blue?logo=github)](https://github.com/Todointerconectado/QR-TABLEROS-ELECTRICOS/network)
-[![GitHub followers](https://img.shields.io/github/followers/Todointerconectado?logo=github)](#)  •  [![GitHub repo size](https://img.shields.io/github/repo-size/Todointerconectado/QR-TABLEROS-ELECTRICOS?logo=github)](#)  •  [![GitHub language count](https://img.shields.io/github/languages/count/Todointerconectado/QR-TABLEROS-ELECTRICOS?logo=github)](#)  •  [![GitHub top language](https://img.shields.io/github/languages/top/Todointerconectado/QR-TABLEROS-ELECTRICOS?logo=JavaScript)](#)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Todointerconectado/qrcosaca?color=blue&logo=github)](https://github.com/Todointerconectado/qrcosaca/pulls) • [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Todointerconectado/qrcosaca?color=blue&logo=github)](https://github.com/Todointerconectado/qrcosaca/pulls) • [![GitHub forks](https://img.shields.io/github/forks/Todointerconectado/qrcosaca?logo=github)](https://github.com/Todointerconectado/qrcosaca/fork)  •  [![GitHub NE Network](https://img.shields.io/badge/NE-Network-blue?logo=github)](https://github.com/Todointerconectado/qrcosaca/network)
+[![GitHub followers](https://img.shields.io/github/followers/Todointerconectado?logo=github)](#)  •  [![GitHub repo size](https://img.shields.io/github/repo-size/Todointerconectado/qrcosaca?logo=github)](#)  •  [![GitHub language count](https://img.shields.io/github/languages/count/Todointerconectado/qrcosaca?logo=github)](#)  •  [![GitHub top language](https://img.shields.io/github/languages/top/Todointerconectado/qrcosaca?logo=JavaScript)](#)
 
 |  Puedes acceder a la versión desplegada de la tienda online a través del siguiente enlace: |
 | :-------------------------------------------------------: |
-| [![GitHub Todointerconectado](https://img.shields.io/badge/todointerconectado.com/-QR_TABLEROS_ELECTRICOS-105d89?style=for-the-badge&logo=github&logoColor=white&labelColor=101)](https://todointerconectado.com/QR-TABLEROS-ELECTRICOS/) |
+| [![GitHub Todointerconectado](https://img.shields.io/badge/todointerconectado.com/-QR_TABLEROS_ELECTRICOS-105d89?style=for-the-badge&logo=github&logoColor=white&labelColor=101)](https://todointerconectado.com/qrcosaca/) |
 
-![Mockup](./assets/images/mockup.png)
+![Mockup](../assets/images/Mockup.png)
 
 Este repositorio contiene el desarrollo de una tienda online funcional, diseñada como parte del curso Frontend de Talento Tech. El proyecto sigue buenas prácticas de desarrollo web, incluyendo el uso de **HTML5 semántico**, **CSS3**, **JavaScript** y un enfoque **Mobile First**. Se implementaron tecnologías como **Flexbox** y **Grid** para el diseño responsivo, y el formulario de contacto es gestionado por **Formspree**.
 
