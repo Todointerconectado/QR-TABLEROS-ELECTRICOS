@@ -1,7 +1,12 @@
 function getParametro(nombre) {
+  // Usar variable global si existe
+  if (nombre === "sede" && window.__SEDE__) {
+    return window.__SEDE__;
+  }
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(nombre);
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const sedeSeleccionada = getParametro("sede");

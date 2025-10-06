@@ -1,6 +1,6 @@
 (async function () {
   const urlParams = new URLSearchParams(window.location.search);
-  let sedeActual = urlParams.get("sede");
+  let sedeActual = window.__SEDE__ || urlParams.get("sede");
 
   const RUTA_JSON = "./data/tableros_completo.json"; // Ruta desde sede.html
   const STORAGE_KEY = "tablerosDatos";
