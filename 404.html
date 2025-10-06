@@ -1,0 +1,81 @@
+<!--Cómo funciona:
+- GitHub Pages recibe /LOMAS → no existe → sirve 404.html.
+- 404.html detecta la ruta (LOMAS), verifica si está en sedesValidas.
+- Si es válida → carga tablero.html como texto.
+- Inyecta el HTML cargado en la página actual sin cambiar la URL.
+- Pasa la sede a tablero.html modificando parámetros o usando una variable global. 
+
+Qué hace este 404.html:
+- Cuando entras a /LOMAS, GitHub Pages detecta que no existe y sirve 404.html.
+- El script detecta "LOMAS" de la URL.
+- Comprueba si la sede existe en tableros_completo.json.
+- Carga tablero.html y lo inyecta en la página.
+- Añade el parámetro ?sede=LOMAS usando window.location.search, así cargar_tableros.js y meta_description.js funcionan sin cambios.
+- Importante: No cambia la URL en la barra del navegador.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargando...</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Cargando sede...</h2>
+
+  <script>
+    (async () => {
+      try {
+        // Obtener la sede desde la URL
+        let path = window.location.pathname.replace(/^\/|\/$/g, "");
+        const partes = path.split("/");
+        const sede = partes[partes.length - 1];
+
+        if (!sede) {
+          document.body.innerHTML = "<h2>No se especificó sede.</h2>";
+          return;
+        }
+
+        // Verificar que la sede existe
+        const sedesJSON = await fetch("/qrtableros/data/tableros_completo.json")
+          .then(r => r.json())
+          .then(json => Array.from(new Set(json.datos.map(d => d.sede))));
+
+        if (!sedesJSON.includes(sede)) {
+          document.body.innerHTML = "<h2>Sede no encontrada.</h2>";
+          return;
+        }
+
+        // Cargar tablero.html
+        const response = await fetch("/qrtableros/tablero.html");
+        let html = await response.text();
+
+        // Crear script a inyectar
+        const injectScript = '<script>window.location.search="?sede=' + encodeURIComponent(sede) + '";<\/script>';
+
+        // Insertar antes de </head>
+        html = html.replace("</head>", injectScript + "</head>");
+
+        // Reemplazar documento actual
+        document.open();
+        document.write(html);
+        document.close();
+
+      } catch (err) {
+        console.error(err);
+        document.body.innerHTML = "<h2>Error cargando la sede.</h2>";
+      }
+    })();
+  </script>
+
+</body>
+</html>
