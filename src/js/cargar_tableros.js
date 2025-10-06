@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         span.textContent = tablero["id del tablero"];
 
         // Flechita
-        img.src = "../../assets/icons/arrow.png";
+        img.src = "./assets/icons/arrow.png";
         img.alt = "arrow";
 
         // Config del enlace
