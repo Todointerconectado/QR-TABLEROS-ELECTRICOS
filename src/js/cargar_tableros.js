@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sedeSeleccionada = getParametro("sede");
   const lista = document.getElementById("content-links");
 
-  fetch("../../data/tableros_completo.json")
+  fetch("./data/tableros_completo.json")
     .then((response) => response.json())
     .then((data) => {
       const tableros = data.datos.filter(
