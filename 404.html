@@ -16,6 +16,7 @@ Qué hace este 404.html:
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,11 +27,32 @@ Qué hace este 404.html:
       text-align: center;
       margin-top: 50px;
     }
+
+    .spinner {
+      margin: 30px auto;
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #c00000;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
 
 <body>
   <h2>Cargando sede...</h2>
+  <div class="spinner"></div>
 
   <script>
     (async () => {
@@ -45,24 +67,30 @@ Qué hace este 404.html:
           return;
         }
 
+        const basePath = "/qrtableros/";
+
         // Verificar que la sede existe
-        const sedesJSON = await fetch("/qrtableros/data/tableros_completo.json")
-          .then(r => r.json())
+        const sedesJSON = await fetch(basePath + "data/tableros_completo.json")
+          .then(r => {
+            if (!r.ok) throw new Error("No se encontró tableros_completo.json");
+            return r.json();
+          })
           .then(json => Array.from(new Set(json.datos.map(d => d.sede))));
 
         if (!sedesJSON.includes(sede)) {
-          document.body.innerHTML = "<h2>Sede no encontrada.</h2>";
+          document.body.innerHTML = "<h2>Sede '" + sede + "' no encontrada.</h2>";
           return;
         }
 
         // Cargar tablero.html
-        const response = await fetch("/qrtableros/tablero.html");
+        const response = await fetch(basePath + "tablero.html");
+        if (!response.ok) throw new Error("No se encontró tablero.html");
         let html = await response.text();
 
-        // Crear script a inyectar
-        const injectScript = '<script>window.location.search="?sede=' + encodeURIComponent(sede) + '";<\/script>';
+        // Crear variable global para sede, evitar reload
+        const injectScript = '<script>window.__SEDE__ = "' + sede + '";<\/script>';
 
-        // Insertar antes de </head>
+        // Insertar script antes de </head>
         html = html.replace("</head>", injectScript + "</head>");
 
         // Reemplazar documento actual
@@ -72,10 +100,11 @@ Qué hace este 404.html:
 
       } catch (err) {
         console.error(err);
-        document.body.innerHTML = "<h2>Error cargando la sede.</h2>";
+        document.body.innerHTML = "<h2>Error cargando la sede:<br>" + err.message + "</h2>";
       }
     })();
   </script>
 
 </body>
+
 </html>
