@@ -60,7 +60,9 @@ Qué hace este 404.html:
         // Obtener la sede desde la URL
         let path = window.location.pathname.replace(/^\/|\/$/g, "");
         const partes = path.split("/");
-        const sede = partes[partes.length - 1];
+        let sede = partes[partes.length - 1];
+
+        sede = decodeURIComponent(sede.replace(/-/g, " "));
 
         if (!sede) {
           document.body.innerHTML = "<h2>No se especificó sede.</h2>";
@@ -71,13 +73,13 @@ Qué hace este 404.html:
 
         // Verificar que la sede existe
         const sedesJSON = await fetch(basePath + "data/tableros_completo.json")
-          .then(r => {
-            if (!r.ok) throw new Error("No se encontró tableros_completo.json");
-            return r.json();
-          })
+          .then(r => r.ok ? r.json() : Promise.reject("No se encontró tableros_completo.json"))
           .then(json => Array.from(new Set(json.datos.map(d => d.sede))));
 
-        if (!sedesJSON.includes(sede)) {
+        const sedeNormalizada = sede.toLowerCase().replace(/\s+/g, "-");
+        const sedesNormalizadas = sedesJSON.map(s => s.toLowerCase().replace(/\s+/g, "-"));
+
+        if (!sedesNormalizadas.includes(sedeNormalizada)) {
           document.body.innerHTML = "<h2>Sede '" + sede + "' no encontrada.</h2>";
           return;
         }
@@ -103,6 +105,7 @@ Qué hace este 404.html:
         document.body.innerHTML = "<h2>Error cargando la sede:<br>" + err.message + "</h2>";
       }
     })();
+
   </script>
 
 </body>
