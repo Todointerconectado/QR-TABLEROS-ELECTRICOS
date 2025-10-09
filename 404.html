@@ -57,6 +57,7 @@ Qué hace este 404.html:
   <script>
     (async () => {
       try {
+        // Obtener la sede desde la URL
         let path = window.location.pathname.replace(/^\/|\/$/g, "");
         const partes = path.split("/");
         let sede = partes[partes.length - 1];
@@ -70,6 +71,7 @@ Qué hace este 404.html:
 
         const basePath = "/qrtableros/";
 
+        // Verificar que la sede existe
         const sedesJSON = await fetch(basePath + "data/tableros_completo.json")
           .then(r => r.ok ? r.json() : Promise.reject("No se encontró tableros_completo.json"))
           .then(json => Array.from(new Set(json.datos.map(d => d.sede))));
@@ -82,13 +84,18 @@ Qué hace este 404.html:
           return;
         }
 
+        // Cargar tablero.html
         const response = await fetch(basePath + "tablero.html");
         if (!response.ok) throw new Error("No se encontró tablero.html");
         let html = await response.text();
 
+        // Crear variable global para sede, evitar reload
         const injectScript = '<script>window.__SEDE__ = "' + sede + '";<\/script>';
+
+        // Insertar script antes de </head>
         html = html.replace("</head>", injectScript + "</head>");
 
+        // Reemplazar documento actual
         document.open();
         document.write(html);
         document.close();
