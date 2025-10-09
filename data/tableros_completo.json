@@ -66,7 +66,7 @@
       "uuid": "3aa659ea-ef27-4eaf-9874-fcc294fc3558",
       "empresa": "HIDALGO",
       "zona": "Zona: 04",
-      "sede": "VICENTE LÓPEZ 2",
+      "sede": "VICENTE-LÓPEZ-2",
       "id del tablero": "VICENTE LÓPEZ 2: PB T-G 01",
       "url": "https://1drv.ms/b/c/4deddb1a6d1d3453/IQRDTRnrhNM1R5HCy9EqfF7TAfgISoSBXKVpoYCv-ectddA",
       "estado": {
@@ -118,7 +118,7 @@
       "uuid": "b3716975-ace7-4776-9062-92173178d8ee",
       "empresa": "HIDALGO",
       "zona": "Zona: 05",
-      "sede": "VILLA ADELINA",
+      "sede": "VILLA-ADELINA",
       "id del tablero": "VILLA ADELINA: PB T-G 01",
       "url": "https://1drv.ms/b/c/4deddb1a6d1d3453/IQRmmDXsBPtdSrA3Ih9hB4cLAdRkVcHR1mBSxO8Dq7dYims",
       "estado": {
@@ -170,7 +170,7 @@
       "uuid": "5fe3d5d2-820c-482a-bce7-159a84f8d4f6",
       "empresa": "HIDALGO",
       "zona": "Zona: 07",
-      "sede": "PILAR PARALELO",
+      "sede": "PILAR-PARALELO",
       "id del tablero": "PILAR PARALELO: PB T-G 01",
       "url": "https://1drv.ms/b/c/4deddb1a6d1d3453/IQRmEFEmmdaZS67ddpS5OGgWAfd6NNfj7U_lhSTmFEXFreI",
       "estado": {
@@ -196,7 +196,7 @@
       "uuid": "dc4c99af-cb66-46bd-b73e-41b6a59b4b1a",
       "empresa": "HIDALGO",
       "zona": "Zona: 08",
-      "sede": "SAN MIGUEL",
+      "sede": "SAN-MIGUEL",
       "id del tablero": "SAN MIGUEL: PB T-G 01",
       "url": "https://1drv.ms/b/c/4deddb1a6d1d3453/IQS7BopBHg15Qpff8zn_EYhWAew_5O4HntIntM5_F-ilueI",
       "estado": {
@@ -248,7 +248,7 @@
       "uuid": "20a79a30-e136-4ae1-aee7-b3916960f00c",
       "empresa": "HIDALGO",
       "zona": "Zona: 09",
-      "sede": "SAN FERNANDO",
+      "sede": "SAN-FERNANDO",
       "id del tablero": "SAN FERNANDO: PB T-G 01",
       "url": "https://1drv.ms/b/c/4deddb1a6d1d3453/IQRkAZZneobiS6Oh3uOxYfBpARIgD-ZQBiDDX6bAaEIF2D4",
       "estado": {
